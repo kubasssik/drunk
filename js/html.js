@@ -147,7 +147,7 @@ export function createDOMElement() {
         quantity: 1,
         root:  document.querySelector('aside'),
         whereRoot: 4,
-        text: 'Предедущие:'
+        text: 'ПредЫдущие:'
     }).start()
 
     new CreateBox({
