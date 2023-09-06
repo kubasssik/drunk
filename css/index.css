@@ -1,0 +1,193 @@
+.wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.game {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 3rem auto 3rem;
+}
+button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+}
+.total{
+    display:none;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    font-size: 5rem;
+    z-index: 100;
+}
+
+header {}
+
+main {
+    margin: 0 auto;
+    width: 70rem;
+    height: 38rem;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: .2rem;
+}
+
+aside {
+    background-color: blue;
+}
+.points,.past__name, .past_test{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.best{
+    font-size: 2rem;
+    color: white; 
+    text-align: center;
+}
+
+.past{
+    font-size: 2rem;
+    color: white;
+    
+    text-align: center; 
+}
+
+
+section {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.danger{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: red;
+    padding: 1rem 1rem .5rem 1rem ;
+    background-color: yellow;
+    font-family: 'Rubik Mono One', sans-serif;
+    border-radius: 1rem;
+    border: .3rem solid black;
+    z-index: 100;
+    animation: dang 1s linear infinite;
+    
+}
+
+@keyframes dang {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.help{
+    position: relative;
+    left: 5%;
+    top: 5%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    border: .2rem solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: .4rem;
+    font-weight: bold;
+}
+.help__text{
+    cursor: pointer;
+position: absolute;
+left: 120%;
+font-size: 2rem;
+border: .1rem solid black;
+z-index: 101;
+background-color: chartreuse;
+padding: 1rem;
+}
+
+.lvl{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 5%;
+    height: 75%;
+    background-color: rgb(0, 107, 107);
+    border-radius: 1rem;
+    border: .3rem solid black;
+    overflow: hidden;
+}
+.lvl__up{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: red;
+    border-radius: .7rem .7rem 0 0;
+    transition: 1s;
+    
+}
+.lvl span{
+    position: relative;
+    top: 5%;
+    left: 15%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+}
+.player {
+    width: 5rem;
+    height: 5rem;
+    
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+@keyframes an {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+
+.hero{
+    position: absolute;
+    width: 6rem;
+    height: 15rem;
+    background:  url(../img/f0.png) center/ cover no-repeat;
+    left: 50%;
+    top: -200%;
+    transform: translate(-50%);
+    transition: .3s;
+}
+
+footer {}
