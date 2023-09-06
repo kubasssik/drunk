@@ -101,7 +101,7 @@ function inclineHero() {
             clearInterval(_set.stop.int)//Удалить setInterval **
             clearInterval(_set.stop.hero)//Удалить setInterval **
 
-            $HERO.style.background =   `  url(img/f0.png) center/ cover no-repeat`
+            $HERO.style.background =   `  url(../../img/f0.png) center/ cover no-repeat`
 
             _set.speed = .1//Сбросить скорость игры
             _set.lvl = -10//Сбросить шкалу опьяенения
@@ -131,7 +131,7 @@ function setIntervalRandom() {
 function addAnimationImg() {
     let i = 1
     _set.stop.hero = setInterval(() => {
-        $HERO.style.background =   `url(img/f${i}.png) center/ cover no-repeat`
+        $HERO.style.background =   `url(../../img/f${i}.png) center/ cover no-repeat`
         i++
         if(i === 5 ) i = 1    
         console.log(i);
