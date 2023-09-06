@@ -34,13 +34,19 @@ let _set = {
     dade: Date.now() + 3000   
 }
 
-$SECTION.addEventListener('touchmove', speedMouse )
 $SECTION.addEventListener('mousemove', speedMouse )
+$SECTION.addEventListener('touchmove', speedTouc )
 
 function speedMouse(e) {
-    if (e.clientX >= _set.mouse) _set.i += _set.speed * 5
-    if (_set.mouse >= e.clientX) _set.i -= _set.speed * 5
-    _set.mouse = e.clientX 
+    if (e.clientX >= _set.mouse) _set.i += _set.speed * 6
+    if (_set.mouse >= e.clientX) _set.i -= _set.speed * 6
+    _set.mouse = e.clientX  
+}
+
+function speedTouc(e) {
+    if (e.changedTouches[0].clientX >= _set.mouse) _set.i += _set.speed * 6
+    if (_set.mouse >= e.changedTouches[0].clientX) _set.i -= _set.speed * 6
+    _set.mouse = e.changedTouches[0].clientX 
 }
 
 function inclineHero() {
