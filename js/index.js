@@ -34,7 +34,7 @@ let _set = {
     dade: Date.now() + 3000   
 }
 
-$SECTION.addEventListener('pointermove', speedMouse )
+$SECTION.addEventListener('touchmove', speedMouse )
 $SECTION.addEventListener('mousemove', speedMouse )
 
 function speedMouse(e) {
