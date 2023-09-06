@@ -54,7 +54,7 @@ function inclineHero() {
 
     function inc() {
         _set.countPoints++ 
-        $ASIDE.children[0].textContent = `ОЧКИ: ${_set.countPoints}`ы
+        $ASIDE.children[0].textContent = `ОЧКИ: ${_set.countPoints}`
         if (_set.action) _set.i += _set.speed * 10 
         else _set.i -= _set.speed * 10  
         if (_set.i > 105 || _set.i < -105) {
